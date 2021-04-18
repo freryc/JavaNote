@@ -36,4 +36,20 @@ public class SingletongTest {
         System.out.println(singleton41.equals(singleton42));
         Singleton4.SINGLETON_4.printSomething();
     }
+	
+	@Test
+    public void test5() {
+        Singleton5 singleton51 = Singleton5.getInstance();
+        Singleton5 singleton52 = Singleton5.getInstance();
+        System.out.println(singleton51.equals(singleton52));
+        Singleton5.getInstance().printSomething();
+    }
+
+    @Test
+    public void test6() {
+        Singleton6 singleton61 = Singleton6.getInstance();
+        Singleton6 singleton62 = Singleton6.getInstance();
+        System.out.println(singleton61.equals(singleton62));
+        Singleton6.getInstance().printSomething();
+    }
 }
